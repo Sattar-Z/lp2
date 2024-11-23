@@ -1,6 +1,8 @@
+import { SvgIconProps } from '@mui/material';
+
 export type Feature = {
   id: number;
-  icon: JSX.Element;
+  icon: React.ComponentType<SvgIconProps>;
   title: string;
   paragraph: string;
 };

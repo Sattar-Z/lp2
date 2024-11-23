@@ -6,35 +6,86 @@ const NewsLatterBox = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
+    <div className="relative z-10 rounded-xl bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Storm Elite FC - Youth Football Academy
       </h3>
-      <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
-      </p>
-      <div>
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter your name"
-          className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-        />
-        <input
-          type="submit"
-          value="Subscribe"
-          className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
-        />
-        <p className="text-center text-base leading-relaxed text-body-color dark:text-body-color-dark">
-          No spam guaranteed, So please don’t send any spam mail.
-        </p>
+
+      <div className="mb-8 text-base text-body-color dark:text-body-color-dark">
+
+        {/* Training Sessions */}
+        <div className="space-y-6">
+          {/* Thursday Session */}
+          <div className="rounded-sm bg-[#f8f8f8] p-4 dark:bg-[#2C303B]">
+            <h4 className="mb-2 font-bold">Thursday</h4>
+            <p>Time: 5pm-6:30pm</p>
+            <p>Ages: U8s, U11s-12s</p>
+            <p className="mt-2">Location:</p>
+            <address className="not-italic">
+              Norbury Park,
+              Harefield Road,
+              SW16 3LX.
+            </address>
+          </div>
+
+          {/* Friday Session */}
+          <div className="rounded-sm bg-[#f8f8f8] p-4 dark:bg-[#2C303B]">
+            <h4 className="mb-2 font-bold">Friday</h4>
+            <p>Time: 6:15pm-7:30pm</p>
+            <p>Ages: U8s, U10s, U12s</p>
+            <p className="mt-2">Location:</p>
+            <address className="not-italic">
+              Tulse Hill,
+              High Tree,
+              SW2 3HP.
+            </address>
+          </div>
+
+          {/* Saturday Session */}
+          <div className="rounded-sm bg-[#f8f8f8] p-4 dark:bg-[#2C303B]">
+            <h4 className="mb-2 font-bold">Saturday - Development Centre</h4>
+            <p>Time: 10am-11:30am</p>
+            <p>Ages: 5-13 years</p>
+            <p className="mt-2">Location:</p>
+            <address className="not-italic">
+              Tooting Bec Lido,
+              Tooting Bec Road,
+              London,
+              SW16 1RU.
+            </address>
+          </div>
+        </div>
+
+        {/* Contact Information */}
+        <div className="mt-8 rounded-sm bg-primary/10 p-4">
+          <h4 className="mb-2 font-bold">Contact Information</h4>
+          <p>Richard GULSTON</p>
+          <p>Storm Elite FC</p>
+          <p className="mt-2">
+            Phone:{" "}
+            <a href="tel:07903517276" className="text-primary hover:underline">
+              07903 517 276
+            </a>
+          </p>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:Info@stormelitefc.com"
+              className="text-primary hover:underline"
+            >
+              Info@stormelitefc.com
+            </a>
+          </p>
+        </div>
+
+        <div className="mt-6 text-center">
+          <a
+            href="#registration"
+            className="inline-block rounded-sm bg-primary px-6 py-3 text-white transition-colors duration-300 hover:bg-primary/90"
+          >
+            Registration Form
+          </a>
+        </div>
       </div>
 
       <div>
@@ -61,12 +112,12 @@ const NewsLatterBox = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -97,12 +148,12 @@ const NewsLatterBox = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -133,12 +184,12 @@ const NewsLatterBox = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -187,11 +238,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -205,11 +256,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -223,11 +274,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>
@@ -241,11 +292,11 @@ const NewsLatterBox = () => {
               >
                 <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#9725be" : "#fff"}
                   stopOpacity="0"
                 />
               </linearGradient>

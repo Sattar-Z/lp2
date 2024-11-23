@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Have questions about our teams, trials, or upcoming events? We’re here to help. Whether you're a parent, player, or fan, feel free to reach out to us with your enquiries, and we’ll respond promptly. Let’s connect and build the future of football together."
       />
 
       <Contact />
